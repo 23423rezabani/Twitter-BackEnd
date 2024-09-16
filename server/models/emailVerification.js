@@ -6,7 +6,7 @@ const emailVerificationSchema = Schema({
     userId:String,
     token:String,
     createdAt:Date,
-    updatedAt:Date
+    expiresAt:Date
 })
 
 const Verification = mongoose.model('verification',emailVerificationSchema);

@@ -1,4 +1,7 @@
 import User from "../models/userModel.js";
+import { sendVerificationEmail } from '../utils/sendEmail.js';
+import { hasstring } from "../utils/index.js";
+
 
 
 export const  register = async(req,res,next) =>{
